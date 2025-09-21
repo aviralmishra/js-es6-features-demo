@@ -1,4 +1,4 @@
-function localScope() {
+function demo() {
     let localScoped = 1;
 
     if (true) {
@@ -8,4 +8,4 @@ function localScope() {
     return localScoped; // will return 1
 }
 
-module.exports = localScope;
+module.exports = demo;
