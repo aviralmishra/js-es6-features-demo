@@ -4,8 +4,12 @@ function demo() {
 
     return {
         name,
-        age
+        age,
+        greet() {
+            console.log(this.name + ', ' + this.age)
+        }
     }
 }
 
+// demo().greet();
 module.exports = demo;
