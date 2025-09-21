@@ -1,4 +1,4 @@
-var add = (a, b) =>
+var demo = (a, b) =>
     a + b
 
-module.exports = add
+module.exports = demo
