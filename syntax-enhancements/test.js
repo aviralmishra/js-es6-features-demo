@@ -1,15 +1,20 @@
 const localScope = require('./local-scope');
-const add = require('./arrow-function');
-const area = require('./default-parameters');
+const arrowFunction = require('./arrow-function');
+const defaultParameters = require('./default-parameters');
+const objectLiteralExtensions = require('./object-literal-extensions');
 
 test('tests local scope', () => {
   expect(localScope()).toEqual(1);
 });
 
 test('tests arrow function', () => {
-  expect(add(2, 3)).toEqual(5);
+  expect(arrowFunction(2, 3)).toEqual(5);
 });
 
 test('tests default parameters', () => {
-  expect(area(3)).toEqual(9.42);
+  expect(defaultParameters(3)).toEqual(9.42);
+});
+
+test('tests object literal extensions', () => {
+  expect(objectLiteralExtensions().name).toEqual('Max');
 });
