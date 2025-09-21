@@ -1,4 +1,4 @@
-var area = (r, pi = 3.14) =>
+var demo = (r, pi = 3.14) =>
     r * pi
 
-module.exports = area
+module.exports = demo
