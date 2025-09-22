@@ -2,6 +2,7 @@ const localScope = require('./local-scope');
 const arrowFunction = require('./arrow-function');
 const defaultParameters = require('./default-parameters');
 const objectLiteralExtensions = require('./object-literal-extensions');
+const restOperator = require('./rest-operator');
 
 test('tests local scope', () => {
   expect(localScope()).toEqual(1);
@@ -17,4 +18,8 @@ test('tests default parameters', () => {
 
 test('tests object literal extensions', () => {
   expect(objectLiteralExtensions().name).toEqual('Max');
+});
+
+test('tests rest operator', () => {
+  expect(restOperator(1, 2, 3, 4, 5)).toEqual(15);
 });
