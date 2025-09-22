@@ -1,14 +1,14 @@
 function demo() {
-    let name = 'Max';
-    let age = 30;
+  let name = "Max";
+  let age = 30;
 
-    return {
-        name,
-        age,
-        greet() {
-            console.log(this.name + ', ' + this.age)
-        }
-    }
+  return {
+    name,
+    age,
+    greet() {
+      console.log(this.name + ", " + this.age);
+    },
+  };
 }
 
 demo();
