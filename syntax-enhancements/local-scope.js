@@ -8,4 +8,6 @@ function demo() {
     return localScoped; // will return 1
 }
 
+console.log(demo());
+
 module.exports = demo;

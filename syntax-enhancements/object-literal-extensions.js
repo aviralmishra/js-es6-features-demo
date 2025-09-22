@@ -11,5 +11,7 @@ function demo() {
     }
 }
 
-// demo().greet();
+demo();
+demo().greet();
+
 module.exports = demo;

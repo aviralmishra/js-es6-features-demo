@@ -8,4 +8,6 @@ function demo(...toAdd) {
     return total;
 }
 
+console.log(demo(1, 2, 3, 4, 5));
+
 module.exports = demo;
