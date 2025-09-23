@@ -1,3 +1,5 @@
-function demo() {}
+function demo() {
+    console.log();
+}
 
 demo();
