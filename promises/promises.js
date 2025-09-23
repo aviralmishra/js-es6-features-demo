@@ -1,7 +1,7 @@
 const myPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
-        reject('Waiting done. Success!!');
-    }, 300);
+        resolve('Waiting done. Success!!');
+    }, 3000);
 });
 
 myPromise.then(
